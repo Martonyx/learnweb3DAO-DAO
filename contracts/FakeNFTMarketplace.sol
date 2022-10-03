@@ -16,7 +16,7 @@ contract FakeNFTMarketplace {
         tokens[_tokenId] = msg.sender;
     }
 
-    function availabe(uint256 _tokenId) external view returns (bool) {
+    function available(uint256 _tokenId) external view returns (bool) {
         if (tokens[_tokenId] == address(0)) {
             return true;
         }
