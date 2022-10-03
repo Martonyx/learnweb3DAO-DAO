@@ -39,7 +39,7 @@ contract CryptoDevsDAO is Ownable {
         mapping(uint256 => bool) voters;
     }
 
-    mapping(uint256 => Proposal) proposals;
+    mapping(uint256 => Proposal) public proposals;
 
     uint256 public numProposals;
 
